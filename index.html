@@ -11,37 +11,10 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="">
-    <!-- navbar  -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="./index.html"><img class="w-75 border rounded-circle"
-                    src="https://lh3.googleusercontent.com/a/AEdFTp7t9NPkLOuhS3i-pFjDNXAV-8c178fpM2myssjS9w=s83-c-mo"
-                    alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Proximamente...</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- fin navbar  -->
-    <div class="container mt-3">
+<body>
+
+    <!-- sobre mi  -->
+    <section id="sobremi" class="container mt-2">
         <div class="row">
             <div class="col-sm-12 col-md-8">
                 <h2 class="text-start">Sobre mi</h2>
@@ -57,7 +30,11 @@
                 <small>Ben Alvarado </small>
             </div>
             <hr>
-            <!-- Carrusel  -->
+    </section>
+
+    <!-- Carrusel  -->
+    <section id="proyectos" class="proyectos container mt-3">
+        <div class="row">
             <div class="col-12">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner text-start">
@@ -83,19 +60,50 @@
                         <span class="visually-hidden">Siguiente</span>
                     </button>
                 </div>
-                <!-- fin carrusel  -->
             </div>
         </div>
-    </div>
+    </section>
+    <!-- fin carrusel  -->
+
 
     <div class="container">
         <div class="row">
-            <div class="col bg-body-tertiary">
+            <div class="col-6 bg-body-tertiary">
                 <h2 class="text-dark">More Info </h2>
             </div>
         </div>
     </div>
 
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="./index.html"><img class="w-75 border rounded-circle"
+                    src="https://lh3.googleusercontent.com/a/AEdFTp7t9NPkLOuhS3i-pFjDNXAV-8c178fpM2myssjS9w=s83-c-mo"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobremi">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Proximamente...</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fin navbar  -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
